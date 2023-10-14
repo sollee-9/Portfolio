@@ -30,11 +30,11 @@ function About({}: Props) {
                 md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
          />
          <div className="space-y-10 px-0 md:px-10">
-            <h4 className="text-4xl font-semibold">
-               Here is a
+            <h4 className="text-2xl font-semibold">
+               Here is a{" "}
                <span className="underline decoration-[#F7AB0A/50]">
                   little
-               </span>
+               </span>{" "}
                background
             </h4>
             <p className="text-base">

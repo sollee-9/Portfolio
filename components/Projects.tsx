@@ -20,11 +20,12 @@ function Projects({}: Props) {
          <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
             {projects.map((project, i) => (
                <div
+                  key={i}
                   className="flex-shrink-0 snap-center flex flex-col space-y-5 items-center
                 justify-center p-56 md:p-44 h-screen"
                >
                   <MotionImage
-                     initial={{ y: -15, opacity: 0 }}
+                     initial={{ y: -50, opacity: 0 }}
                      transition={{ duration: 0.7 }}
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
