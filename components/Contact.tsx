@@ -38,11 +38,11 @@ function Contact({}: Props) {
 
             <div>
                <div className="flex items-center space-x-5">
-                  <EnvelopeIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+                  <EnvelopeIcon className="text-[#676097] h-7 w-7 animate-pulse" />
                   <p>sollee.contact@gmail.com</p>
                </div>
                <div className="flex items-center space-x-5">
-                  <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+                  <MapPinIcon className="text-[#676097] h-7 w-7 animate-pulse" />
                   <p>Vancouver, BC & New York, NY</p>
                </div>
             </div>
