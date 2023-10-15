@@ -18,7 +18,8 @@
     "react-hook-form": "^7.47.0",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^6.4.0",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "tailwind-scrollbar": "^3.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
