@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.18.0",
     "framer-motion": "^10.16.4",
     "next": "13.5.4",
+    "next-sanity": "^5.5.8",
     "react": "^18",
     "react-dom": "^18",
     "react-hexgrid": "^2.0.1",
@@ -19,6 +22,8 @@
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^6.4.0",
     "react-transition-group": "^4.4.5",
+    "sanity": "^3.18.0",
+    "styled-components": "5.2",
     "tailwind-scrollbar": "^3.0.5"
   },
   "devDependencies": {

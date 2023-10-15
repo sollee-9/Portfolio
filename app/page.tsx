@@ -9,10 +9,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-   ArrowUpCircleIcon,
-   ChevronUpIcon,
-} from "@heroicons/react/24/outline";
+import { ChevronUpIcon } from "@heroicons/react/24/outline";
 
 export const MotionDiv = motion.div;
 export const MotionImage = motion.img;
@@ -52,7 +49,7 @@ const Home: NextPage = () => {
          <Link href="#hero">
             <footer className="sticky bottom-5 w-full cursor-pointer">
                <div className="flex items-center justify-center">
-                  <ArrowUpCircleIcon className="h-10 w-10 text-gray-400 hover:opacity-20" />
+                  <ChevronUpIcon className="text-xs font-thin h-10 w-10 text-gray-300 hover:opacity-20" />
                </div>
             </footer>
          </Link>
