@@ -20,7 +20,7 @@ function Hero({}: Props) {
          <BackgroundCircle />
          <img
             className="relative rounded-full h-32 w-32 mx-auto object-cover"
-            src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
+            src="https://media.licdn.com/dms/image/D5603AQGDChX8iftwsQ/profile-displayphoto-shrink_400_400/0/1697002583460?e=1703116800&v=beta&t=PwlRM0QeOgbNZWzgJ6l9fLnxuQvT57mj04Korwc4xf8"
          />
          <div className="z-20">
             <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">

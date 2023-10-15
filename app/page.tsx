@@ -8,16 +8,12 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { motion } from "framer-motion";
-
 export const MotionDiv = motion.div;
 export const MotionImage = motion.img;
 
 const Home: NextPage = () => {
    return (
-      <div
-         className="bg-white text-black h-screen snap-y 
-         snap-mandatory overflow-scroll z-0"
-      >
+      <div className="bg-[url('../images/background.png')] bg-no-repeat bg-cover text-black h-screen snap-y snap-mandatory overflow-scroll z-0;">
          <Header />
 
          <section id="hero" className="snap-start">

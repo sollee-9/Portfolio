@@ -1,5 +1,6 @@
 import React from "react";
 import { MotionDiv, MotionImage } from "../app/page";
+import laptop from "../images/laptop.png";
 
 type Props = {};
 
@@ -29,7 +30,7 @@ function Projects({}: Props) {
                      transition={{ duration: 0.7 }}
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
-                     src="https://img.freepik.com/free-psd/isolated-realistic-laptop_125540-2157.jpg"
+                     src="https://99designs-start-attachments.imgix.net/alchemy-pictures/2016%2F01%2F29%2F06%2F52%2F16%2F2574220d-7737-4c39-a562-8e153a5d1497%2Fwebsite-hero3.png?auto=format&ch=Width%2CDPR&crop=false&fm=png&w=824&h=457"
                      alt="project"
                      className="h-[200px] mt-14"
                   />
@@ -55,10 +56,6 @@ function Projects({}: Props) {
                </div>
             ))}
          </div>
-         <div
-            className="w-full absolute top-[30%] bg-[#f7ab0a]/10 left-0 h-[300px]
-         -skew-y-12"
-         ></div>
       </MotionDiv>
    );
 }

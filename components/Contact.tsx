@@ -15,7 +15,8 @@ function Contact({}: Props) {
    const { register, handleSubmit } = useForm<Inputs>();
 
    const onSubmit: SubmitHandler<Inputs> = (data) => {
-      window.location.href = `malito:sollee.contact@gmail?subject=${data.subject}&body=name: ${data.name} - ${data.message} (${data.email})`;
+      // window.location.href = `malito:sollee.contact@gmail?subject=${data.subject}&body=name: ${data.name} - ${data.message} (${data.email})`;
+      console.log("sending email");
    };
 
    return (
