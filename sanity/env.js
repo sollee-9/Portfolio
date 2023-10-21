@@ -4,6 +4,3 @@ export const apiVersion =
 export const dataset = "production";
 export const projectId = "96wxxq7q";
 export const useCdn = false;
-
-// NEXT_PUBLIC_SANITY_PROJECT_ID="96wxxq7q"
-// NEXT_PUBLIC_SANITY_DATASET="production"
