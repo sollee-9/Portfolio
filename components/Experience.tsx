@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
-import { MotionDiv } from "../app/page";
+import { motion } from "framer-motion";
+export const MotionDiv = motion.div;
 
 type Props = {};
 

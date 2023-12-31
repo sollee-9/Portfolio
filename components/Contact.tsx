@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -28,14 +29,7 @@ function Contact({}: Props) {
             Contact
          </h3>
 
-         <div className="flex flex-col space-y-10">
-            <h4 className="text-2xl font-semibold text-center">
-               I have got just what you need.{" "}
-               <span className="decoration-[#f8ab0a]/50 underline">
-                  Let's Talk.
-               </span>
-            </h4>
-
+         <div className="flex flex-col space-y-10 mt-8">
             <div>
                <div className="flex items-center space-x-5">
                   <EnvelopeIcon className="text-[#676097] h-7 w-7 animate-pulse" />
@@ -77,7 +71,7 @@ function Contact({}: Props) {
                />
                <button
                   type="submit"
-                  className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg"
+                  className="bg-[#676097] py-5 px-10 rounded-md text-white font-bold text-lg"
                >
                   Send
                </button>

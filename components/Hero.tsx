@@ -1,13 +1,20 @@
+"use client";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircle from "./BackgroundCircle";
 import Link from "next/link";
+import headshot from "../images/headshot.png";
+import Image from "next/image";
 
 type Props = {};
 
 function Hero({}: Props) {
    const [text, count] = useTypewriter({
-      words: ["Developer", "Designer", "Creator"],
+      words: [
+         "Software Developer",
+         "Product Manager",
+         "UX Researcher",
+      ],
       loop: true,
       delaySpeed: 2000,
    });
@@ -18,19 +25,22 @@ function Hero({}: Props) {
         text-center overflow-hidden"
       >
          <BackgroundCircle />
-         <img
-            className="relative rounded-full h-32 w-32 mx-auto object-cover"
-            src="https://media.licdn.com/dms/image/D5603AQGDChX8iftwsQ/profile-displayphoto-shrink_400_400/0/1697002583460?e=1703116800&v=beta&t=PwlRM0QeOgbNZWzgJ6l9fLnxuQvT57mj04Korwc4xf8"
+         <Image
+            className="relative rounded-full h-40 w-40 mx-auto object-cover"
+            src={headshot}
+            height={150}
+            width={150}
+            alt="profile image"
          />
          <div className="z-20">
             <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-               Software Developer
+               Sol (Melissa) Lee
             </h2>
-            <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+            <h1 className="text-3xl lg:text-4xl font-semibold px-10">
                <span className="mr-3">{text}</span>
-               <Cursor cursorColor="#F7AB0A" />
+               <Cursor cursorColor="#676097" />
             </h1>
-            <div className="pt-5">
+            <div className="pt-5 space-x-1">
                <Link href="#about">
                   <button className="heroButton">About</button>
                </Link>

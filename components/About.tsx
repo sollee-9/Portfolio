@@ -1,9 +1,14 @@
+"use client";
 import React from "react";
-import { MotionDiv, MotionImage } from "../app/page";
+import { motion } from "framer-motion";
+import profile from "../images/profile.jpeg";
 
 type Props = {};
 
 function About({}: Props) {
+   const MotionDiv = motion.div;
+   const MotionImage = motion.img;
+
    return (
       <MotionDiv
          initial={{ opacity: 0 }}
@@ -25,9 +30,9 @@ function About({}: Props) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            src="https://img.freepik.com/free-photo/puppy-that-is-walking-snow_1340-37228.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697241600&semt=sph"
+            src={profile.src}
             className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-                md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
+                md:rounded-lg md:w-[280px] md:h-[300px] xl:w-[300px] xl:h-[360px]"
          />
          <div className="space-y-10 px-0 md:px-10">
             <h4 className="text-2xl font-semibold">

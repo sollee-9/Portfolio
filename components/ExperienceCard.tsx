@@ -1,6 +1,9 @@
+"use client";
 import React, { useState } from "react";
-import { MotionImage } from "../app/page";
 import ExperienceDetailCard from "./ExperienceDetailCard";
+import { motion } from "framer-motion";
+export const MotionDiv = motion.div;
+export const MotionImage = motion.img;
 
 type Props = {};
 

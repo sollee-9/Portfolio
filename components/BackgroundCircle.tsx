@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
-import { MotionDiv } from "../app/page";
+import { motion } from "framer-motion";
+export const MotionDiv = motion.div;
 
 type Props = {};
 
@@ -17,7 +19,7 @@ function BackgroundCircle({}: Props) {
          }}
          className="relative flex justify-center items-center"
       >
-         <div className="rounded-full border border-[#333333] h-[500px] w-[500px] absolute mt-52" />
+         <div className="rounded-full border border-gray-300 h-[500px] w-[500px] absolute mt-52" />
 
          <div className="rounded-full border border-[#F7AB0A] opacity-20 h-[650px] w-[650px] absolute mt-52" />
       </MotionDiv>

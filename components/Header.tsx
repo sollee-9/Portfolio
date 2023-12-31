@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import { MotionDiv } from "../app/page";
 import Link from "next/link";
+import { motion } from "framer-motion";
+export const MotionDiv = motion.div;
+export const MotionImage = motion.img;
 
 type Props = {};
 
@@ -47,9 +50,12 @@ function Header({}: Props) {
                fgColor="gray"
                bgColor="transparent"
             />
-            <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+            <a
+               href="#contact"
+               className="uppercase hidden md:inline-flex text-sm text-gray-400"
+            >
                Get in touch
-            </p>
+            </a>
          </MotionDiv>
       </header>
    );

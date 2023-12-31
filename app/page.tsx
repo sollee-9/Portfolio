@@ -1,20 +1,30 @@
-"use client";
 import type { NextPage } from "next";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Experience from "../components/Experience";
+import WorkExperience from "../components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
+import {
+   Experience,
+   PageInfo,
+   Project,
+   Skill,
+   Social,
+} from "../typings";
 
-export const MotionDiv = motion.div;
-export const MotionImage = motion.img;
+type Props = {
+   pageInfo: PageInfo;
+   experiences: Experience[];
+   skills: Skill[];
+   project: Project[];
+   socials: Social[];
+};
 
-const Home: NextPage = () => {
+const Home = () => {
    return (
       <div
          className="bg-[url('../images/background.png')] bg-no-repeat bg-cover text-black h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
@@ -31,7 +41,7 @@ const Home: NextPage = () => {
          </section>
 
          <section id="experience" className="snap-center">
-            <Experience />
+            <WorkExperience />
          </section>
 
          <section id="skills" className="snap-start">

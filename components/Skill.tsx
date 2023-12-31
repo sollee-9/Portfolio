@@ -1,11 +1,15 @@
+"use client";
 import React from "react";
-import { MotionDiv } from "../app/page";
+import { motion } from "framer-motion";
+export const MotionDiv = motion.div;
 
 type Props = {
    directionLeft?: boolean;
+   image: string;
+   text: string;
 };
 
-function Skill({ directionLeft }: Props) {
+function Skill({ image, text, directionLeft }: Props) {
    return (
       <>
          <MotionDiv
@@ -23,8 +27,8 @@ function Skill({ directionLeft }: Props) {
                justify-center items-center shadow-lg shadow-violet-200/70"
             >
                <img
-                  src="https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png"
-                  className="h-[70%] w-[70%]"
+                  src={image}
+                  className="h-[70%] w-[70%] object-contain"
                />
                <div
                   className="absolute opacity-0 group-hover:opacity-80 transition duration-300
@@ -32,7 +36,7 @@ function Skill({ directionLeft }: Props) {
                >
                   <div className="flex items-center justify-center h-full">
                      <p className="text-sm text-gray-500 opacity-100 mb-[3px]">
-                        JavaScript
+                        {text}
                      </p>
                   </div>
                </div>
