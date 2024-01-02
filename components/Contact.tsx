@@ -19,7 +19,7 @@ function Contact({}: Props) {
    const [message, setMessage] = useState<string>("");
    const [subject, setSubject] = useState<string>("");
 
-   const sendEmail = (e) => {
+   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       const params = {
          from_name: name,
