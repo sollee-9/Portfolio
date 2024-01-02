@@ -2,7 +2,7 @@ import React from "react";
 import Skill from "./Skill";
 import javascript from "../images/skills/javascript.png";
 import node from "../images/skills/Node.png";
-import react from "../images/skills/React.png";
+import react from "../images/skills/react.png";
 import python from "../images/skills/python.png";
 import cpp from "../images/skills/c++.png";
 import c from "../images/skills/c.png";

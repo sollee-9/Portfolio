@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
+import emailjs from "emailjs-com";
 
 type Props = {};
 
@@ -13,11 +14,39 @@ type Inputs = {
 };
 
 function Contact({}: Props) {
-   const { register, handleSubmit } = useForm<Inputs>();
+   const [name, setName] = useState<string>("");
+   const [email, setEmail] = useState<string>("");
+   const [message, setMessage] = useState<string>("");
+   const [subject, setSubject] = useState<string>("");
 
-   const onSubmit: SubmitHandler<Inputs> = (data) => {
-      // window.location.href = `malito:sollee.contact@gmail?subject=${data.subject}&body=name: ${data.name} - ${data.message} (${data.email})`;
-      console.log("sending email");
+   const sendEmail = (e) => {
+      e.preventDefault();
+      const params = {
+         from_name: name,
+         email_id: email,
+         message: message,
+         subject: subject,
+      };
+
+      emailjs
+         .send(
+            "service_7tv4raq",
+            "template_2lad7sl",
+            params,
+            "5E1rl8HXA2njN6dNr"
+         )
+         .then(
+            (result) => {
+               console.log("email sent");
+               setName("");
+               setEmail("");
+               setMessage("");
+               setSubject("");
+            },
+            (error) => {
+               console.log(error.text);
+            }
+         );
    };
 
    return (
@@ -41,33 +70,41 @@ function Contact({}: Props) {
                </div>
             </div>
             <form
-               onSubmit={handleSubmit(onSubmit)}
+               onSubmit={(e) => sendEmail(e)}
                className="flex flex-col space-y-2 w-fit mx-auto"
             >
                <div className="flex space-x-2">
                   <input
-                     {...register("name")}
+                     value={name}
+                     onChange={(e) => setName(e.target.value)}
                      placeholder="Name"
                      className="contactInput"
                      type="text"
+                     required
                   />
                   <input
-                     {...register("email")}
+                     value={email}
+                     onChange={(e) => setEmail(e.target.value)}
                      placeholder="Email"
                      className="contactInput"
                      type="text"
+                     required
                   />
                </div>
                <input
-                  {...register("subject")}
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                   placeholder="Subject"
                   className="contactInput"
                   type="text"
+                  required
                />
                <textarea
-                  {...register("message")}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   placeholder="Message"
                   className="contactInput"
+                  required
                />
                <button
                   type="submit"
