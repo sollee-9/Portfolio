@@ -13,10 +13,6 @@ function Projects({}: Props) {
    const MotionDiv = motion.div;
    const MotionImage = motion.img;
 
-   const goToProjectPage = (title: String) => {
-      router.push(`/project?name=${title}`);
-   };
-
    return (
       <MotionDiv
          initial={{ opacity: 0 }}
@@ -29,7 +25,7 @@ function Projects({}: Props) {
             Projects
          </h3>
 
-         <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+         <div className="relative w-full flex overflow-x-scroll no-scrollbar overflow-y-hidden snap-x snap-mandatory z-20">
             {projects.map((project, i) => (
                <div
                   key={i}
@@ -66,7 +62,7 @@ function Projects({}: Props) {
                      </p>
                      <button
                         onClick={() =>
-                           goToProjectPage(project.shortName)
+                           window.open(project.url, "_blank")
                         }
                         className="justify-center flex m-auto border-gray-300 w-24 h-8 border text-sm 
                      font-bold items-center rounded-full mt-2"
