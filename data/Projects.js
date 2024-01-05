@@ -6,8 +6,8 @@ import portfolio from "../images/projects/portfolio.png";
 
 // skills
 import javascript from "../images/skills/javascript.png";
-import node from "../images/skills/Node.png";
-import react from "../images/skills/React.png";
+import node from "../images/skills/node.png";
+import react from "../images/skills/reactjs.png";
 import python from "../images/skills/python.png";
 import cpp from "../images/skills/c++.png";
 import c from "../images/skills/c.png";
