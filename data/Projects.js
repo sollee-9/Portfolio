@@ -29,13 +29,18 @@ export const projects = [
       img: airbnb2,
       skills: [
          { title: "JavaScript", img: javascript },
+         { title: "Next.js", img: next },
          { title: "React.js", img: react },
          { title: "Tailwind", img: tailwind },
          { title: "Figma", img: figma },
          { title: "Git", img: git },
       ],
-      description:
-         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem laudantium, totam rem aperiam, eaque ipsa quae Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae Sed",
+      description: `Airbnb Compare & Suggest addresses the limitations of the current Airbnb Wishlist feature 
+
+      With Compare & Suggest, users can now effortlessly compare wishlist properties, receive personalized recommendations, and benefit from AI-generated summaries of guest reviews
+      
+      This solution empowers users with efficient decision-making tools, transforming the Airbnb experience by streamlining property selection and enabling efficient travel planning on Airbnb
+      `,
       url: "https://docs.google.com/presentation/d/1a5u2axo72tE5sZVMumQnno3DuJodIQFavJFw7d_DulM/edit?usp=sharing",
    },
    {

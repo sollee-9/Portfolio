@@ -57,7 +57,7 @@ function Projects({}: Props) {
                            />
                         ))}
                      </div>
-                     <p className="text-sm text-center text-gray-600 my-2 mx-auto whitespace-pre-line w-[60%]">
+                     <p className="text-sm text-center text-gray-500 my-2 mx-auto whitespace-pre-line w-[60%]">
                         {project.description}
                      </p>
                      <button
