@@ -61,10 +61,12 @@ export const projects = [
          { title: "TypeScript", img: ts },
          { title: "Next.js", img: next },
          { title: "React.js", img: react },
+         { title: "Tailwind", img: tailwind },
+         { title: "Figma", img: figma },
          { title: "Git", img: git },
       ],
       description:
-         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae",
-      url: "https://docs.google.com/presentation/d/1a5u2axo72tE5sZVMumQnno3DuJodIQFavJFw7d_DulM/edit?usp=sharing",
+         "This very portfolio website that you are viewing now was designed on Figma and built using TypeScript, Next, React, and Tailwind CSS \n \n It features various dynamic interactive features and animations throughout the web pages for an immersive user experience",
+      url: "https://github.com/sollee-9/Portfolio",
    },
 ];

@@ -1,5 +1,6 @@
 import React from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 type Props = {
    setOpen(arg: boolean): void;
@@ -7,10 +8,10 @@ type Props = {
 
 function ExperienceDetailCard({ setOpen }: Props) {
    return (
-      <div className="absolute  m-auto">
+      <div className="fixed top-24 left-1/2 z-50">
          <article
-            className="flex flex-col rounded-lg justify-center items-center space-y-7 flex-shrink-0 w-[90%]
-       snap-center bg-[gray] border cursor-pointer  overflow-hidden mt-12 mx-5 p-5 z-[99999]"
+            className="flex flex-col rounded-lg justify-center items-center space-y-7 flex-shrink-0 
+       snap-center bg-[gray] border cursor-pointer overflow-hidden mt-12 mx-5 p-5"
          >
             <div className="flex">
                <img
@@ -23,7 +24,8 @@ function ExperienceDetailCard({ setOpen }: Props) {
                   <h4 className="text-l font-light">CEO of MMML</h4>
                   <p className="font-bold text-m mt-1">MMML</p>
                   <div className="flex space-x-2 my-2">
-                     <img
+                     <Image
+                        alt=""
                         className="h-10 w-10 rounded-full"
                         src="https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png"
                      />

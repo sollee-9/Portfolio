@@ -40,16 +40,16 @@ const Home = () => {
             <About />
          </section>
 
-         <section id="experience" className="snap-center">
-            <WorkExperience />
-         </section>
-
          <section id="skills" className="snap-start">
             <Skills />
          </section>
 
          <section id="projects" className="snap-start">
             <Projects />
+         </section>
+
+         <section id="experience" className="snap-center">
+            <WorkExperience />
          </section>
 
          <section id="contact" className="snap-start">

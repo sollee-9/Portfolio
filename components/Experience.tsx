@@ -2,6 +2,7 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
 import { motion } from "framer-motion";
+import { experiences } from "../data/Experiences";
 export const MotionDiv = motion.div;
 
 type Props = {};
@@ -22,10 +23,9 @@ function Experience({}: Props) {
             Experience
          </h3>
          <div className="absolute w-full h-5/6 max-h-[800px] flex space-x-5 no-scrollbar overflow-x-scroll p-10 snap-x snap-mandatory">
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
+            {experiences.map((experience, i) => (
+               <ExperienceCard key={i} experience={experience} />
+            ))}
          </div>
       </MotionDiv>
    );
