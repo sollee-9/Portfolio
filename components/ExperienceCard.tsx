@@ -14,9 +14,9 @@ function ExperienceCard({ experience }: Props) {
       <>
          <article
             // onClick={() => setOpen(!open)}
-            className="flex flex-col rounded-lg relative justify-center items-center space-y-7 flex-shrink-0 w-[300px] 
-               md:w-[350px] xl:w-[400px] snap-center hover:bg-[#fbfbfe] bg-[white] border hover:opacity-100 cursor-pointer 
-               transition-opacity duration-200 overflow-hidden mt-12  p-5"
+            className="flex flex-col rounded-2xl relative justify-center items-center space-y-7 flex-shrink-0 w-[350px] xl:w-[400px] snap-center
+             hover:bg-[#fbfbfe] bg-[white] border hover:opacity-100 cursor-pointer max-h-[440px]
+               transition-opacity duration-200 overflow-hidden mt-12 p-5 h-full"
          >
             <MotionImage
                initial={{
@@ -26,13 +26,13 @@ function ExperienceCard({ experience }: Props) {
                transition={{ duration: 0.8 }}
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
-               className="w-24 h-24 rounded-full object-fit object-cover
-                object-center min-h-[50px] min-w-[50px] absolute top-16"
+               className="w-32 h-32 rounded-full object-fit object-cover
+                object-center min-h-[50px] min-w-[50px] absolute top-12"
                src={experience.image.src}
                alt="work experience"
             />
             <div className="px-0 md:px-10">
-               <div className=" absolute top-48 left-12">
+               <div className=" absolute top-48 left-12 pr-12">
                   <p className="font-bold text-lg mt-1">
                      {experience.company}
                   </p>
@@ -65,6 +65,19 @@ function ExperienceCard({ experience }: Props) {
                   {experience.end}
                </p>
             </div>
+            <button
+               onClick={() =>
+                  window.open(
+                     "https://www.linkedin.com/in/melissasollee/",
+                     "_blank"
+                  )
+               }
+               className="justify-center flex m-auto border-gray-300 w-24 h-8 border text-sm 
+                     font-bold items-center rounded-full mt-2 absolute bottom-16  hover:scale-105
+                     ease-in-out duration-300 hover:shadow-sm"
+            >
+               Learn more
+            </button>
          </article>
          {/* {open ? <ExperienceDetailCard setOpen={setOpen} /> : null} */}
       </>

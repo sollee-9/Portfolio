@@ -66,7 +66,8 @@ export const projects = [
          { title: "Git", img: git },
       ],
       description:
-         "This very portfolio website that you are viewing now was designed on Figma and built using TypeScript, Next, React, and Tailwind CSS \n \n It features various dynamic interactive features and animations throughout the web pages for an immersive user experience",
+         "This very website that you are viewing right now was designed on Figma and built using TypeScript, Next, React, and Tailwind CSS \n \n It features a modern website design with various dynamic interactive features and animations throughout the pages for an immersive user experience ",
+
       url: "https://github.com/sollee-9/Portfolio",
    },
 ];

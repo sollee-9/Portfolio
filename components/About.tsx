@@ -38,7 +38,7 @@ function About({}: Props) {
 
             <p
                className="max-h-[180px] w-full sm:ml-4 sm:max-h-[400px] mt-3 px-8 text-sm sm:text-[15px] 
-               text-gray-600 text-left whitespace-pre-line text-ellipsis overflow-scroll"
+               text-gray-500 text-left whitespace-pre-line text-ellipsis overflow-y-scroll lg:scrollbar-hide"
             >
                Hey, there! 👋🏼 I&apos;m Sol, a tech enthusiast on a
                mission to bridge the worlds of business strategy and

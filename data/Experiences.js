@@ -30,7 +30,7 @@ export const experiences = [
    },
    {
       company: "The University of British Columbia",
-      jobTitle: "Teaching Assistant, Computer Science",
+      jobTitle: "Teaching Assistant, Python",
       image: ubc,
       points: [""],
       start: "Sep 2020",

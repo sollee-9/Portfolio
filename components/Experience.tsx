@@ -22,7 +22,7 @@ function Experience({}: Props) {
          >
             Experience
          </h3>
-         <div className="absolute w-full h-5/6 max-h-[800px] flex space-x-5 no-scrollbar overflow-x-scroll p-10 snap-x snap-mandatory">
+         <div className="absolute w-full h-5/6 max-h-[800px] m-auto items-center flex space-x-5 no-scrollbar overflow-x-scroll p-10 snap-x snap-mandatory">
             {experiences.map((experience, i) => (
                <ExperienceCard key={i} experience={experience} />
             ))}
