@@ -47,9 +47,9 @@ const Home = () => {
             <Projects />
          </section>
 
-         <section id="experience" className="snap-center">
+         {/* <section id="experience" className="snap-center">
             <WorkExperience />
-         </section>
+         </section> */}
 
          <section id="contact" className="snap-start">
             <Contact />

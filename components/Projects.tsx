@@ -64,10 +64,10 @@ function Projects({}: Props) {
                         onClick={() =>
                            window.open(project.url, "_blank")
                         }
-                        className="justify-center flex m-auto border-gray-300 w-24 h-8 border text-sm 
+                        className="justify-center flex m-auto border-gray-300 h-8 border text-sm px-3
                      font-bold items-center rounded-full mt-2"
                      >
-                        Learn more
+                        {project.buttonOption}
                      </button>
                   </div>
                </div>

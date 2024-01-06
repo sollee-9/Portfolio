@@ -35,16 +35,15 @@ export const projects = [
          { title: "Figma", img: figma },
          { title: "Git", img: git },
       ],
-      description: `Airbnb Compare & Suggest addresses the limitations of the current Airbnb Wishlist feature 
-
-      With Compare & Suggest, users can now effortlessly compare wishlist properties, receive personalized recommendations, and benefit from AI-generated summaries of guest reviews
+      description: `With Compare & Suggest, users can effortlessly compare wishlist properties, receive personalized recommendations, and benefit from AI-generated summaries of guest reviews
       
       This solution empowers users with efficient decision-making tools, transforming the Airbnb experience by streamlining property selection and enabling efficient travel planning on Airbnb
       `,
       url: "https://docs.google.com/presentation/d/1a5u2axo72tE5sZVMumQnno3DuJodIQFavJFw7d_DulM/edit?usp=sharing",
+      buttonOption: "Learn more",
    },
    {
-      title: "Connexa",
+      title: "Connexa.ai",
       shortName: "connexa",
       img: connexa,
       skills: [
@@ -54,9 +53,12 @@ export const projects = [
          { title: "AWS", img: aws },
          { title: "Git", img: git },
       ],
-      description:
-         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae",
+      description: `Connexa.ai is transforming customer service for small to medium businesses (SMBs) with a mission to facilitate genuine human connections
+
+      Tackling the challenge of inconsistent customer experiences across channels, Connexa.ai introduces an all-in-one inbox with AI-powered analytics dashboard for real-time insights`,
+
       url: "https://docs.google.com/presentation/d/1a5u2axo72tE5sZVMumQnno3DuJodIQFavJFw7d_DulM/edit?usp=sharing",
+      buttonOption: "Learn more",
    },
    {
       title: "Portfolio",
@@ -74,5 +76,6 @@ export const projects = [
          "This very website that you are viewing right now was designed on Figma and built using TypeScript, Next, React, and Tailwind CSS \n \n It features a modern website design with various dynamic interactive features and animations throughout the pages for an immersive user experience ",
 
       url: "https://github.com/sollee-9/Portfolio",
+      buttonOption: "Learn more",
    },
 ];
