@@ -11,8 +11,8 @@ type Props = {};
 function Hero({}: Props) {
    const [text, count] = useTypewriter({
       words: [
-         "Software Developer",
          "Product Manager",
+         "Software Developer",
          "UX Researcher",
       ],
       loop: true,
