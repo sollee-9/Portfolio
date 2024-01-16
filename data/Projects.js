@@ -57,7 +57,7 @@ export const projects = [
 
       Tackling the challenge of inconsistent customer experiences across channels, Connexa.ai introduces an all-in-one inbox with AI-powered analytics dashboard for real-time insights`,
 
-      url: "https://docs.google.com/presentation/d/1a5u2axo72tE5sZVMumQnno3DuJodIQFavJFw7d_DulM/edit?usp=sharing",
+      url: "https://www.connexa.ai/",
       buttonOption: "Learn more",
    },
    {
