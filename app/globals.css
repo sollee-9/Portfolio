@@ -16,6 +16,11 @@
          focus:text-[#676097] hover:border-[#676097]/40;
    }
 
+   .project-buttons {
+      @apply bg-white text-[15px] text-gray-700 py-3 shadow-md rounded-lg w-[40%] hover:scale-105 ease-in duration-200
+      min-w-[280px] max-w-[500px] border-[0.5px];
+   }
+
    /* Hide scrollbar for Chrome, Safari and Opera */
    .no-scrollbar::-webkit-scrollbar {
       display: none;

@@ -13,6 +13,14 @@ function Projects({}: Props) {
    const MotionDiv = motion.div;
    const MotionImage = motion.img;
 
+   const openProject = (url: string) => {
+      if (url.slice(0, 4) === "http") {
+         window.open(url, "_blank");
+      } else {
+         router.push(url);
+      }
+   };
+
    return (
       <MotionDiv
          initial={{ opacity: 0 }}
@@ -48,22 +56,26 @@ function Projects({}: Props) {
                         </span>{" "}
                         {project.title}
                      </h4>
-                     <div className="flex justify-center space-x-2 my-3">
-                        {project.skills.map((skill) => (
-                           <img
-                              key={skill.title}
-                              className="h-5 w-5s object-contain"
-                              src={skill.img.src}
-                           />
-                        ))}
+                     <div className="flex flex-col justify-center">
+                        <span className="text-xs flex justify-center my-2">
+                           <p className="font-bold mr-1">Role:</p>
+                           {project.role}
+                        </span>
+                        <div className="flex space-x-2 justify-center">
+                           {project.skills.map((skill) => (
+                              <img
+                                 key={skill.title}
+                                 className="h-5 w-5s object-contain"
+                                 src={skill.img.src}
+                              />
+                           ))}
+                        </div>
                      </div>
                      <p className="text-sm text-center text-gray-500 my-2 mx-auto whitespace-pre-line w-[60%]">
                         {project.description}
                      </p>
                      <button
-                        onClick={() =>
-                           window.open(project.url, "_blank")
-                        }
+                        onClick={() => openProject(project.url)}
                         className="justify-center flex m-auto border-gray-300 h-8 border text-sm px-3
                      font-bold items-center rounded-full mt-2"
                      >

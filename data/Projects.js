@@ -3,6 +3,7 @@ import airbnb2 from "../images/projects/airbnb2.png";
 import airbnb from "../images/projects/airbnb.png";
 import connexa from "../images/projects/connexa.png";
 import portfolio from "../images/projects/portfolio.png";
+import notion from "../images/projects/notion.png";
 
 // skills
 import javascript from "../images/skills/javascript.png";
@@ -24,9 +25,24 @@ import ts from "../images/skills/ts.png";
 
 export const projects = [
    {
+      title: "Notion - Collaborative Workspace",
+      shortName: "notion",
+      img: notion,
+      skills: [{ title: "Figma", img: figma }],
+      role: "Product Manager, UX Researcher & Product Designer",
+      description: `This project aims to resolve the perceived scalability challenges faced by Notion users and introduces enhancements to foster a collaborative environment tailored to growing teams 
+      
+      Key features include centralized comments, flexible drawing board for brainstorming & ideation, easy-to-use visualization tool that integrates seamlessly with their database systems 
+      `,
+      url: "/projects/notion",
+      buttonOption: "Learn more",
+   },
+   {
       title: "Airbnb Compare & Suggest",
       shortName: "airbnb",
       img: airbnb2,
+      role: "Product Manager, Software Engineer & Product Designer",
+
       skills: [
          { title: "JavaScript", img: javascript },
          { title: "Next.js", img: next },
@@ -46,6 +62,8 @@ export const projects = [
       title: "Connexa.ai",
       shortName: "connexa",
       img: connexa,
+      role: "Product Manager & Software Engineer",
+
       skills: [
          { title: "JavaScript", img: javascript },
          { title: "React.js", img: react },
@@ -64,6 +82,8 @@ export const projects = [
       title: "Portfolio",
       shortName: "portfolio",
       img: portfolio,
+      role: "Software Engineer & Designer",
+
       skills: [
          { title: "TypeScript", img: ts },
          { title: "Next.js", img: next },
