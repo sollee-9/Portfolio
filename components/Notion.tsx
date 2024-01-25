@@ -10,7 +10,6 @@ function Notion({}: Props) {
    const router = useRouter();
    return (
       <div>
-         {" "}
          <button
             onClick={() => router.push("/#projects")}
             className="fixed top-6 left-6 flex items-center text-gray-500 hover:scale-105 ease-in duration-200"
@@ -42,7 +41,7 @@ function Notion({}: Props) {
             <button
                onClick={() =>
                   window.open(
-                     "https://docs.google.com/presentation/d/1n6gSGpWyd0HaoANrGT7U83W2Hfqgc3Bj-4HjJ-bUigw/edit?usp=sharing",
+                     "https://drive.google.com/file/d/1Qm-MJHaUaj8TlQwcvI_cFiMPXd3rh6RZ/view?usp=sharing",
                      "_blank"
                   )
                }
