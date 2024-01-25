@@ -47,7 +47,7 @@ function Notion({}: Props) {
                }
                className="project-buttons"
             >
-               Whitepaper Report
+               White Paper Report
             </button>
             <button
                onClick={() =>
