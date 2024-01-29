@@ -41,7 +41,7 @@ function Notion({}: Props) {
             <button
                onClick={() =>
                   window.open(
-                     "https://drive.google.com/file/d/1zkp3zSEKSeiAcoEL8qWbaeZY7C3_yKOt/view?usp=sharing",
+                     "https://drive.google.com/file/d/1nIaD4SOOFGXKTrXCG58P0dxZlIPIxX9P/view?usp=sharing",
                      "_blank"
                   )
                }
