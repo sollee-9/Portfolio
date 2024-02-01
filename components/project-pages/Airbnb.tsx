@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import notionProject from "../images/projects/notion.png";
+import airbnbProject from "../../images/projects/airbnb.png";
 import { ChevronLeftIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
@@ -19,18 +19,18 @@ function Notion({}: Props) {
          </button>
          {/* Image */}
          <div className="flex w-6/6 justify-center">
-            <img src={notionProject.src} className="w-[300px]" />
+            <img src={airbnbProject.src} className="w-[300px]" />
          </div>
          {/* Title */}
          <h1 className="flex w-6/6 justify-center font-semibold text-gray-700 my-3">
-            Notion - Collaborative Workspace
+            Airbnb Compare & Suggest
          </h1>
          {/* Buttons */}
          <div className="flex flex-col justify-center items-center space-y-2">
             <button
                onClick={() =>
                   window.open(
-                     "https://docs.google.com/presentation/d/1n6gSGpWyd0HaoANrGT7U83W2Hfqgc3Bj-4HjJ-bUigw/edit?usp=sharing",
+                     "https://docs.google.com/presentation/d/1a5u2axo72tE5sZVMumQnno3DuJodIQFavJFw7d_DulM/edit?usp=sharing",
                      "_blank"
                   )
                }
@@ -41,18 +41,19 @@ function Notion({}: Props) {
             <button
                onClick={() =>
                   window.open(
-                     "https://drive.google.com/file/d/1nIaD4SOOFGXKTrXCG58P0dxZlIPIxX9P/view?usp=sharing",
+                     "https://airbnb-compare-suggest.vercel.app/",
                      "_blank"
                   )
                }
-               className="project-buttons"
+               className="project-buttons flex justify-center"
             >
-               White Paper Report
+               🌐 <p className="font-bold mx-1">Live Build:</p>
+               Interactive Application
             </button>
             <button
                onClick={() =>
                   window.open(
-                     "https://www.figma.com/proto/nkDIDZkSFMWsXU7PZNiL0S/Notion?type=design&node-id=1-2&t=8bamISerJwnPONZl-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design",
+                     "https://www.figma.com/proto/8ZCEB0jFDlNvPdyBinYMUR/Airbnb-Compare-Interactive-Prototype?type=design&node-id=1-12&t=xL8wN7l9I018PXnS-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A12&show-proto-sidebar=1&mode=design",
                      "_blank"
                   )
                }
@@ -63,24 +64,13 @@ function Notion({}: Props) {
             <button
                onClick={() =>
                   window.open(
-                     "https://docs.google.com/presentation/d/1n6gSGpWyd0HaoANrGT7U83W2Hfqgc3Bj-4HjJ-bUigw/edit#slide=id.g2b22f2c9094_6_12",
+                     "https://docs.google.com/presentation/d/1a5u2axo72tE5sZVMumQnno3DuJodIQFavJFw7d_DulM/edit#slide=id.g2ab7b096878_0_46",
                      "_blank"
                   )
                }
                className="project-buttons"
             >
                Product Demo Video
-            </button>
-            <button
-               onClick={() =>
-                  window.open(
-                     "https://www.figma.com/file/nkDIDZkSFMWsXU7PZNiL0S/Notion?type=design&node-id=1%3A2&mode=design&t=zIHSQlCulRi7k0X0-1",
-                     "_blank"
-                  )
-               }
-               className="project-buttons"
-            >
-               Figma Working Doc
             </button>
          </div>
       </div>

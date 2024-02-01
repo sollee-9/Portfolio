@@ -55,7 +55,7 @@ export const projects = [
       
       This solution empowers users with efficient decision-making tools, transforming the Airbnb experience by streamlining property selection and enabling efficient travel planning on Airbnb
       `,
-      url: "https://docs.google.com/presentation/d/1a5u2axo72tE5sZVMumQnno3DuJodIQFavJFw7d_DulM/edit?usp=sharing",
+      url: "/projects/airbnb",
       buttonOption: "Learn more",
    },
    {
